@@ -2,379 +2,359 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>LEGOLAND</title>
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="plugin/jquery.fullPage.css" type="text/css">
-  <link rel="stylesheet" href="css/animate.css" type="text/css">
-  <link rel="stylesheet" href="css/base.css" type="text/css">
-  <link rel="stylesheet" href="css/responsive.css" type="text/css">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/source/image/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="source/image/favicon-16x16.png">
-  <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script type="application/javascript" src="plugin/jquery.fullPage.js"></script>
-  <script src="js/index.js"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내셔널지오그래픽</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="192x192" href="source/image/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/5a7b56592f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <a href="#main_content" class="quick_link">
+                <i class="fa-solid fa-anchor" title="본문 바로가기"></i>
+            </a>
+            <nav>
+                <div class="container jcsb aic">
+                    <h1 class="logo"><a href=""><span>내셔널지오그래픽</span></a></h1>
+                    <ul class="main_menu d-flex">
+                        <li class="active"><a href="">HOME</a></li>
+                        <li><a href="">DISNEY PLUS</a></li>
+                        <li><a href="">STORE</a></li>
+                        <li><a href="">MAGAZINES</a></li>
+                        <!-- <li><a href="">SOCIAL MEDIA</a></li> -->
+                    </ul>
+                </div>
+            </nav>
+            <div class="slidewrapper">
+                <ul class="slide_container">
+                    <li class="slide">
+                        <img src="source/image/header_slide_img1.jpg" alt="">
+                        <div class="content">
+                            <h3>DISNEY PLUS</h3>
+                            <h2>작은 불빛</h2>
+                            <div class="title_deco">
+                                <svg>
+                                    <circle cx="4" cy="4" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p>제2차 세계대전, 나치로부터 유대인을 구하려 했던 미스 하프의 이야기</p>
+                            <!-- <p class="links d-flex">
+                            <a href="" class="btn">VIEW MORE</a>
+                        </p> -->
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="source/image/header_slide_img2.jpg" alt="">
+                        <div class="content">
+                            <h3>STORE</h3>
+                            <h2>PC 액세서리</h2>
+                            <div class="title_deco">
+                                <svg>
+                                    <circle cx="4" cy="4" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p>BLUETOOTH 5.2 & 2.4GHZ 무선 키보드 & 마우스 신규 출시</p>
+                            <!-- <p class="links d-flex">
+                            <a href="" class="btn">VIEW MORE</a>
+                        </p> -->
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="source/image/header_slide_img3.jpg" alt="">
+                        <div class="content">
+                            <h3>MAGAZINES</h3>
+                            <h2>트래블러 매거진</h2>
+                            <div class="title_deco">
+                                <svg>
+                                    <circle cx="4" cy="4" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p>5월호 HAPPILY EVER AFTER | 김연아와 함께한 대자연 속 캐나다 여정</p>
+                            <!-- <p class="links d-flex">
+                            <a href="" class="btn">VIEW MORE</a>
+                        </p> -->
+                        </div>
+                    </li>
+                </ul><!--slide_container-->
+                <div class="controls">
+                    <a href="" class="prev"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="" class="next"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </header>
 
-  <div id="fullpage">
-    <header id="header">
-      <nav id="sidebar"><!--#sidebar-->
-        <input type="checkbox" id="menuicon">
-        <label for="menuicon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="sidebar">
-          <ul>
-            <li class="depth1"><a href="#">PARK &amp; TICKET</a>
-              <ul>
-                <li class="depth2"><a href="#">이용권</a></li>
-                <li class="depth2"><a href="#">EXTRA</a></li>
-                <li class="depth2"><a href="#">제휴/혜택</a></li>
-              </ul>
-            </li>
-            <li class="depth1"><a href="#">HOTEL</a>
-              <ul>
-                <li class="depth2"><a href="#">LEGOLAND HOTEL</a></li>
-                <li class="depth2"><a href="#">SPECIAL OFFER</a></li>
-                <li class="depth2"><a href="#">제휴 호텔</a></li>
-              </ul>
-            </li>
-            <li class="depth1"><a href="#">즐길거리</a>
-              <ul>
-                <li class="depth2"><a href="#">테마 파크</a></li>
-                <li class="depth2 my-sub"><a href="sub.html">다이닝</a></li>
-                <li class="depth2"><a href="#">시즌이벤트</a></li>
-                <li class="depth2"><a href="#">프로모션</a></li>
-              </ul>
-            </li>
-            <li class="depth1"><a href="#">이용가이드</a>
-              <ul>
-                <li class="depth2"><a href="#">이용정보</a></li>
-                <li class="depth2"><a href="#">이용방법</a></li>
-                <li class="depth2"><a href="#">편의시설/제도</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--sidebar-->
-      </nav>
+        <main id="main_content">
+            <section class="who_we_are container">
+                <h2 class="hidden">who we are</h2>
+                <ul class="d-flex" data-aos="zoom-out-down">
+                    <li><span class="icon_box">
+                            <span class="sprite earth"></span>
+                        </span>
+                        <h3>내셔널지오그래픽 협회</h3>
+                        <p>탐험과 환경 보호를 통해 지구와 인류에 공헌하고 있는 세계 최대의 비영리 단체입니다.
+                            매년 전세계의 수많은 연구와 환경 보호 프로젝트를 지원하고 있으며, 다방면의 교육 캠페인 등을 통해 미래 세대에게 영감과 비전을 심어주고 있습니다.</p>
+                    </li>
+                    <li><span class="icon_box">
+                            <span class="sprite video"></span>
+                        </span>
+                        <h3>내셔널지오그래픽 채널</h3>
+                        <p>1997년 개국하여 현재 전 세계 171개국 45개 언어로 방송되고 있습니다.
+                            탁월한 영상미는 물론 치밀한 과학적 분석과 엄격한 팩트 체크를 기반으로 세계 최고의 팩추얼 엔터테인먼트
+                            프로그램을 제작, 방송해 왔으며 현재까지 에미 어워드를 비롯 국제 방송 시상식에서 1,000회가 넘는 수상 경력이 이를 증명하고 있습니다.</p>
+                    </li>
+                    <li><span class="icon_box">
+                            <span class="sprite book"></span>
+                        </span>
+                        <h3>내셔널지오그래픽 매거진</h3>
+                        <p>현재 전 세계 28개국 23개 언어로 매월 동시 발행되고 있습니다.
+                            1888년 내셔널지오그래픽 협회의 지리 학술지로 창간되어현재는 세계의 지리뿐만 아니라 과학, 모험, 탐험, 자연, 인류, 문화, 역사, 고고학, 생태, 환경, 우주
+                            등
+                            다양한 분야를 심도 있게 다루는 세계 최고의 종합 교양지로 인정받고 있습니다. 특히 단순한 기록을 넘어 예술적으로도 높게 평가 받는 내셔널지오그래픽의 사진은
+                            전 세계 사진 작가들의 이상이며 독자들에게는 높은 소장가치로 매거진 그 이상의 의미를 갖게 합니다.</p>
+                    </li>
+                    <li><span class="icon_box">
+                            <span class="sprite shirt"></span>
+                        </span>
+                        <h3>내셔널지오그래픽 어패럴</h3>
+                        <p>지금 이순간에도 지구와 인류를 위한 끊임없는 모험과 탐험을 이어가고 있는 내셔널지오그래픽 탐험가들과
+                            그들이 이뤄낸 업적을 모티브로 하고 있습니다. 의류, 여행 캐리어, 백팩, 캠핑 및 등산용품 등 700여 가지가 넘는 다양한 제품을 통해
+                            도시와 자연, 일상과 모험을 넘나드는 여러분의 특별한 여정을 함께합니다.</p>
+                    </li>
+                </ul>
+            </section>
 
-      <div class="logo">
-        <a href="index.html"><img src="source/image/logo.png" alt="로고"></a>
-      </div>
+            <section class="disney_plus">
+                <h2 class="content_tt">DISNEY PLUS</h2>
+                <div class="title_deco">
+                    <svg>
+                        <circle cx="4" cy="4" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="buttons aic">
+                    <button data-filter="all" class="active">ALL</button><span>/</span>
+                    <button data-filter="nature">NATURE</button><span>/</span>
+                    <button data-filter="history">HISTORY</button><span>/</span>
+                    <button data-filter="drama">DRAMA</button>
+                    <p class="links d-flex">
+                        <a href="" class="btn"> VIEW MORE +</a>
+                    </p>
+                </div>
+                <ul>
+                    <li class="nature">
+                        <figure>
+                            <img src="source/image/disney_plus_img1.jpg" alt="elephant">
+                            <figcaption>
+                                <h3>코끼리의 비밀</h3>
+                                <p><a href="">nature</a><span>/</span>
+                                    <a href="">우리가 몰랐던 코끼리의 비밀이 밝혀진다</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="nature">
+                        <figure>
+                            <img src="source/image/disney_plus_img2.jpg" alt="zoo">
+                            <figcaption>
+                                <h3>동물원의 비밀</h3>
+                                <p><a href="">nature</a><span>/</span><a href="">콜럼버스 동물원 사람들의 이야기</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="nature">
+                        <figure>
+                            <img src="source/image/disney_plus_img3.jpg" alt="killer whale">
+                            <figcaption>
+                                <h3>범고래 VS 백상아리</h3>
+                                <p><a href="">nature</a><span>/</span><a href="">범고래와 백상아리 사이의 미스터리</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="history">
+                        <figure>
+                            <img src="source/image/disney_plus_img4.jpg" alt="Origins">
+                            <figcaption>
+                                <h3>오리진스</h3>
+                                <p><a href="">history</a><span>/</span><a href="">인류의 기원</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="history">
+                        <figure>
+                            <img src="source/image/disney_plus_img5.jpg" alt="Morgan Freeman">
+                            <figcaption>
+                                <h3>모건 프리먼의 스토리 오브 갓 3</h3>
+                                <p><a href="">history</a><span>/</span><a href="">신에 관한 인류의 영원한 호기심</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="history">
+                        <figure>
+                            <img src="source/image/disney_plus_img6.jpg" alt="Machu Picchu">
+                            <figcaption>
+                                <h3>마추픽추의 잃어버린 도시</h3>
+                                <p><a href="">history</a><span>/</span><a href="">고대 도시 마추픽추의 비밀</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="drama">
+                        <figure>
+                            <img src="source/image/disney_plus_img7.jpg" alt="mars">
+                            <figcaption>
+                                <h3>마스 Ⅱ</h3>
+                                <p><a href="">drama</a><span>/</span><a href="">인류의 새로운 시작, 그 두번째 이야기</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="drama">
+                        <figure>
+                            <img src="source/image/disney_plus_img8.jpg" alt="Long Road Home">
+                            <figcaption>
+                                <h3>롱 로드 홈</h3>
+                                <p><a href="">drama</a><span>/</span><a href="">우리는 반드시 함께 돌아간다!</a></p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
 
-      <div id="search-icon" class="icon">
-        <!-- <a href=""><i class="xi-user-o"></i></a> -->
-        <label for="inpt-search" class="search">
-          <input type="text" id="inpt-search">
-        </label>
-      </div>
+            <section class="store">
+                <h2 class="content_tt">STORE</h2>
+                <div class="title_deco">
+                    <svg>
+                        <circle cx="4" cy="4" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="content container">
+                    <div class="slides">
+                        <p class="pager">
+                            <a href="#article1">article1</a>
+                            <a href="#article2">article2</a>
+                            <a href="#article3">article3</a>
+                            <a href="#article3">article4</a>
+                        </p>
+                        <article id="article1">
+                            <span class="icon_box">
+                                <span class="icon"><i class="fa-solid fa-shirt fa-beat"></i></span>
+                            </span>
+                            <h3>내셔널지오그래픽 어패럴</h3>
+                            <p>23 SPRING COLLECTION: LET IT BLOOM</p>
+                            <a href="" class="btn">READ MORE +</a>
+                        </article>
+                        <article id="article2">
+                            <span class="icon_box">
+                                <span class="icon"><i class="fa-solid fa-mobile-screen-button fa-beat"></i></span>
+                            </span>
+                            <h3>내셔널지오그래픽 모바일 액세서리</h3>
+                            <p>극한 환경을 극복하는 우수한 내구성의 모바일 액세서리</p>
+                            <a href="" class="btn">READ MORE +</a>
+                        </article>
+                        <article id="article3">
+                            <span class="icon_box">
+                                <span class="icon"><i class="fa-solid fa-camera fa-beat"></i></span>
+                            </span>
+                            <h3>내셔널지오그래픽 짐벌캠</h3>
+                            <p>흔들림 없는 위대한 기록</p>
+                            <a href="" class="btn">READ MORE +</a>
+                        </article>
+                        <article id="article4">
+                            <span class="icon_box">
+                                <span class="icon"><i class="fa-solid fa-desktop fa-beat"></i></span>
+                            </span>
+                            <h3>내셔널지오그래픽 PC 액세서리</h3>
+                            <p>BLUETOOTH 5.2 &amp; 2.4GHZ 무선 키보드 &amp; 마우스 신규 출시</p>
+                            <a href="" class="btn">READ MORE +</a>
+                        </article>
+                    </div>
 
-    </header>
+                    <figure>
+                        <img src="source/image/store_img1.jpg" alt="">
+                        <img src="source/image/store_img2.jpg" alt="">
+                        <video autoplay muted loop>
+                            <source type="video/mp4" src="source/image/store_img3.mp4">
+                          </video>
+                        <img src="source/image/sotre_img4.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
 
-    <main>
-      <div class="section " id="visual">
-        <video src="source/video/legoland.mp4" id="visualVideo" type="video/mp4" loop autoplay muted data-keepplaying>
-          Your browser does not support the video tag.
-        </video>
-        <div id="scroll-icon" class="icon">
-          <a href="#"><i class="xi-scroll xi-3x"></i><br>SCROLL DOWN</a>
-        </div>
-      </div>
+            
+            <section class="magazine"><!--container(box)-->
+                <div class="container">
+                    <h2>MAGAZINE</h2>
+                    <div class="title_deco">
+                        <svg>
+                            <circle cx="4" cy="4" r="4"></circle>
+                        </svg>
+                    </div>
+                  </div>
+                  
+                  <div class="blank"></div>
+                  
+                  <div class="container second">
+                    <div class="poster">
+                        <img src="source/image/646ff97b65692.jpg" alt="the cast of Schitt’s Creek" />
+                        <div><p>MAGAZINE | 
+                            조화로운 공동체를 이루다</p>
+                        </div>
+                    </div>
 
-      <section class="section s1">
-        <div class="fp-slide section1-container">
-          <div class="section1-box">
-            <div class="section1-item1">
-              <span class="s1-text1">LET'S GO</span>
-              <ul class="s1-text2">
-                <li><span>FIREWORKS</span></li>
-                <li><span>PARTYNIGHT</span></li>
-                <li><span>WITH BTS</span></li>
-                <li><span>LEGOLAND</span></li>
-              </ul>
-            </div>
-            <div class="section1-item2">
-              <pre>
-                  <h3>LEGOLAND 불꽃놀이</h3>
-                  <p>                                         5월에는 피날레로 불꽃놀이까지!
-                                      장소 : LEGOCITY 어썸스테이지
-                  </p>
-                  </pre>
-              <div class="btn"><a href="">READ MORE<i class="xi-long-arrow-right xi-2x"></i></a></div>
-            </div>
-          </div>
-        </div><!--section1-container-->
+                    <div class="poster poster2">
+                        <img src="source/image/4e7479e4baaf5a46716d90ff7fbb7892.jpg" alt="the cast of Schitt’s Creek" />
+                        <div><p>TRAVELER MAGAZINE | 
+                        이스라엘의 풍미</p></div>
+                      </div>
 
-
-
-        <div class="fp-slide section1-2-container"><!--marquee-->
-          <div class="section1-2-box"><!--track-->
-            <div class="section1-2-item1">
-              <h3><span>"LOOK FOR</span><br><span>LEGOFRIENDS"</span></h3>
-            </div>
-            <div class="section1-2-item2">
-              <img src="source/image/section1-2-img1.png" alt="">
-            </div>
-
-            <div class="section1-2-item3">
-              <div class="item3-text"><span>STEP 1.</span><br> 레고® 프렌즈 메인 부스에서 스탬프 카드를 받고<br> 스탬프투어를 시작하세요!<br>
-                <span>STEP 2.</span><br> 레고랜드® 파크 곳곳에 마련된 스탬프<br> 부스에서 스탬프 4개를 모으세요!<br>
-
-                <span>STEP 3.</span><br> 스탬프 투어 미션 완료 후<br> 메인 부스에 오후 3시까지 방문하여<br> 스타트백을 선물로 받아가세요!
-              </div>
-              <!-- <img src="source/image/section1-2-img2.png" alt=""> -->
-            </div>
-          </div>
-        </div><!--section1-container-->
-      </section><!--s1-->
-
-      <section class="section s2">
-        <div class="section2-title">
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p>
-            <img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-          <div class="s2-slide">
-            <p>HAPPYBIRTHDAY LEGOLAND</p><img src="source/image/section2_img1.png" alt="">
-          </div>
-        </div><!--section2-title-->
-
-
-
-        <div class="s2-swiper">
-          <div class="s2-wrapper">
-            <div class="card">
-              <div class="card-image">
-                <img src="source/image/section2_img2.png" alt="">
-              </div>
-              <div class="card-description card1">
-                <p class="text-title">LEGOLAND 보물찾기</p>
-                <p class="text-body">보물상자를 열 수 있는 키는 단 5개!<br>55개의 열쇠를 뽑아서<br> 마음에 드는 보물상자를 열어보세요!</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src="source/image/section2_img3.png" alt="">
-              </div>
-              <div class="card-description card2">
-                <p class="text-title">STREET MAGICIAN</p>
-                <p class="text-body">거리마다 돌아다니는 마술사가 진행하는 신기한 거리 마술!!</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src="source/image/section2_img4.png" alt="">
-              </div>
-              <div class="card-description card3">
-                <p class="text-title">키다리 아저씨</p>
-                <p class="text-body">1주년 축하 파티를 위해<br>찾아온 키다리 아저씨와 함께<br> 추억을 남겨보세요!</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src="source/image/section2_img5.png" alt="">
-              </div>
-              <div class="card-description card4">
-                <p class="text-title">LEGOLAND STAR</p>
-                <p class="text-body">LEGOLAND 파티에 초대받은<br>
-                  LEGOLAND 친구들의 코스튬 콘테스트</p>
-              </div>
-            </div>
-          </div><!--s2-wrapper-->
-        </div>
-      </section><!--s2-->
-
-      <section class="section s3">
-        <div class="s3-title">
-          <h2>LEGOLAND<br>KOREA<br>RESORT</h2>
-        </div>
-        <div class="s3-gallery">
-          <div class="s3-col">
-            <div class="s3-img">
-              <img src="source/image/section3_img1.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img2.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img3.jpg" alt="">
-            </div>
-          </div>
-          <div class="s3-col">
-            <div class="s3-img">
-              <img src="source/image/section3_img4.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img5.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img6.jpg" alt="">
-            </div>
-          </div>
-          <div class="s3-col">
-            <div class="s3-img">
-              <img src="source/image/section3_img7.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img8.jpg" alt="">
-            </div>
-            <div class="s3-img">
-              <img src="source/image/section3_img9.jpg" alt="">
-            </div>
-          </div>
-        </div><!--s3-gallery-->
-      </section><!--s3-->
-
-      <section class="section s4">
-        <div class="s4-title">
-          아름다운 호반의 도시
-          <div class="s4-flip">
-            <div class="s4-point">
-              <div class="s4-textwrap">40 여개의 놀이기구</div>
-            </div>
-            <div class="s4-point">
-              <div class="s4-textwrap">각양각색 퍼포먼스 쇼</div>
-            </div>
-            <div class="s4-point">
-              <div class="s4-textwrap">다양한 어트랙션</div>
-            </div>
-          </div>
-          강원도 춘천에서 만나요!
-        </div><!--s4-title-->
-
-        <div class="s4-container">
-          <div class="s4-leftbox">
-            <div class="s4-tab">
-              <input type="radio" name="acc" id="s4-acc1">
-              <label for="s4-acc1">
-                <span>01</span>
-                <h4>대중교통</h4>
-              </label>
-              <div class="s4-content">
-                <p>[지하철]<br>
-                  - 경춘선 타고 춘천역까지 오세요!<br>
-                  [기차]<br>
-                  - ITX청춘 타고 춘천역까지 오세요!<br>
-                  [고속버스]<br>
-                  서울고속버스터미널 승차 -> 춘천역육교앞 하차<br>
-                  (10개 정류장 이동, 약 8분 소요)</p>
-              </div>
-            </div>
-            <div class="s4-tab">
-              <input type="radio" name="acc" id="s4-acc2">
-              <label for="s4-acc2">
-                <span>02</span>
-                <h4>자가용</h4>
-              </label>
-              <div class="s4-content">
-                <p>LEGOLAND® 코리아는 강원 춘천시 하중도길 128 에 위치합니다.<br>
-                  주차장 - 정문간 셔틀버스(무료)가 운행됩니다.</p>
-              </div>
-            </div>
-            <div class="s4-tab">
-              <input type="radio" name="acc" id="s4-acc3">
-              <label for="s4-acc3">
-                <span>03</span>
-                <h4>셔틀버스</h4>
-              </label>
-              <div class="s4-content">
-                <p>주차장 - 호텔<br>
-                  주차장과 호텔 사이를 오가는 셔틀버스가 운행이 되고 있습니다.<br> 셔틀버스는 매 15분 마다 운영됩니다. </p>
-              </div>
-            </div>
-            <div class="s4-tab">
-              <input type="radio" name="acc" id="s4-acc4">
-              <label for="s4-acc4">
-                <span>04</span>
-                <h4>레고랜드 정기셔틀버스</h4>
-              </label>
-              <div class="s4-content">
-                <p>대전에서 레고랜드 정기셔틀버스 운행 OPEN !<br>
-                  주유비 톨게이트비 주차비 걱정하지마시고<br>
-                  레고랜드 이용권 + 왕복교통비용을 저렴하게 이용해보세요! </p>
-              </div>
-            </div>
-          </div>
-          <div class="s4-rightbox">
-            <!-- <img src="source/image/section4_img3.png" alt=""> -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12596.33306418766!2d127.68648315398518!3d37.881735379740086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e659562112a3%3A0x497fc142a5e546c7!2z66CI6rOg656c65OcIOy9lOumrOyVhCDrpqzsobDtirg!5e0!3m2!1sko!2skr!4v1685438310633!5m2!1sko!2skr"
-              width="600" height="450" frameborder="2" id="s4-map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="s4-item1">
-              <img src="source/image/section4-img.png" alt="">
-            </div>
-          </div>
-        </div><!--s4-container-->
+                    <!-- <div class="poster">
+                      <div class="img img-first"></div>
+                      <div class="card">
+                        <h3>Rock climbing</h3>
+                        <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+                        <a href="" class="btn">READ MORE +</a>
+                      </div>
+                    </div>
+                    <div class="poster">
+                      <div class="img img-second"></div>
+                      <div class="card">
+                        <h3>Caving</h3>
+                        <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial.</p>
+                        <a href="" class="btn">READ MORE +</a>
+                      </div>
+                    </div>
+                    <div class="poster">
+                      <div class="img img-third"></div>
+                      <div class="card">
+                        <h3>Parachuting</h3>
+                        <p>Jumping from an aeroplane and falling through the air before opening your parachute.</p>
+                        <a href="" class="btn">READ MORE +</a>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="blank"></div>
+            </section>
+        </main>
+        
         <footer>
-          <div class="footer-left">
-            <a href=""><img src="source/image/logo.png" alt=""></a>
-          </div>
-          <div class="footer-center">
-            <p>
-            <pre>
-
-
-
-              강원도 춘천시 하중도길128  |  LEGOLAND® Korea Resort
-
-대표자 : 매튜 폴 조엣  |  사업자등록번호 : 617-81-99974  |  통신판매업신고번호 : 제 2021-강원춘천-0527호
-
-대표번호 033) 815-2300 (연중 10:00~18:00 / 점심시간 12:00~13:00)
-
-LEGO, the LEGO logo, the Brick and Knob configurations, the Minifigure and LEGOLAND are trademarks of the LEGO group.
- ©2020 The LEGO Group. LEGOLAND is a part of Merlin Entertainments Ltd.
-            </pre>
-            </p>
-          </div>
-          <div class="footer-right">
-            <i class="xi-facebook-official"></i>
-            <i class="xi-instagram"></i>
-            <i class="xi-youtube-play"></i>
-          </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis doloribus neque, ipsum saepe itaque sequi laudantium eaque ab error explicabo ut consequatur minus, at impedit asperiores voluptatum. Harum, veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis doloribus neque, ipsum saepe itaque sequi laudantium eaque ab error explicabo ut consequatur minus, at impedit asperiores voluptatum. Harum, veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis doloribus neque, ipsum saepe itaque sequi laudantium eaque ab error explicabo ut consequatur minus, at impedit asperiores voluptatum. Harum, veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis doloribus neque, ipsum saepe itaque sequi laudantium eaque ab error explicabo ut consequatur minus, at impedit asperiores voluptatum. Harum, veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis doloribus neque, ipsum saepe itaque sequi laudantium eaque ab error explicabo ut consequatur minus, at impedit asperiores voluptatum. Harum, veniam.</p>
         </footer>
-      </section><!--s4-->
-    </main>
-
-  </div><!--fullpage-->
-  <a href="#num0" id="tothetop"><img src="source/icon/rocket-launch-unscreen.gif" alt="">TOP</a>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  <script src="js/gsap.js"></script>
-  <script src="plugin/gsap.min.js"></script>
-
+    </div><!--warpper-->
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
